@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "ea66449c-36d5-4998-a1db-a54b951842f1",
+		"name": "genpact_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18430102"
+	},
+	"item": [
+		{
+			"name": "Create Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"todo_title\":\"Email Sam\",\n    \"todo_description\":\"Email Sam\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sea-lion-app-77lg6.ondigitalocean.app/api/todo/add",
+					"protocol": "https",
+					"host": [
+						"sea-lion-app-77lg6",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"todo",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sea-lion-app-77lg6.ondigitalocean.app/api/todo/find/all",
+					"protocol": "https",
+					"host": [
+						"sea-lion-app-77lg6",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"todo",
+						"find",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sea-lion-app-77lg6.ondigitalocean.app/api/todo/delete/all",
+					"protocol": "https",
+					"host": [
+						"sea-lion-app-77lg6",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"todo",
+						"delete",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo_id\":\"64dc6df67d6be4c64a2df7fe\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sea-lion-app-77lg6.ondigitalocean.app/api/todo/delete",
+					"protocol": "https",
+					"host": [
+						"sea-lion-app-77lg6",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"todo",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
